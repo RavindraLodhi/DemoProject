@@ -1,0 +1,33 @@
+<div class="containe">
+<form #userForm="ngForm" (ngSubmit)="submit(userForm.value)">
+  <div class="imgcontainer">
+    <img src="/assets/images/MantraLogo.jpg" alt="Avatar" class="avatar">
+  </div>
+   <div class="form-group">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username"  class="form-control" name="userName" ngModel>
+   </div>
+   <div class="form-group">
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter password"  class="form-control" name="password" ngModel>
+   </div>
+   <button type="submit">Login</button>
+  <!-- <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" [formGroup]="form" formControlName="userName" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" [(ngModel)]="Formdata.pass" placeholder="Enter Password" formControlName="password" name="psw" required>
+
+    <button type="submit" (click)="">Login</button>
+   <label>
+      <input type="checkbox" [(ngModel)]="Formdata.rememberMe" checked="checked" formControlName="rememberMe" name="remember"> Remember me
+    </label> 
+  </div> -->
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div>
